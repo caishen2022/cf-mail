@@ -24,9 +24,9 @@ import { DEFAULT_THEME, parseThemeFromCookieHeader } from "~/utils/theme";
 import type { Route } from "./+types/root";
 import "./app.css";
 
-const SITE_OG_TITLE = "smail.pw · 24-Hour Temporary Email";
+const SITE_OG_TITLE = "smail.pw · 1-Hour Temporary Email";
 const SITE_OG_DESCRIPTION =
-	"Free disposable email inbox with 24-hour auto-expiry. Use a temporary address for sign-ups and verification.";
+	"Free disposable email inbox with 1-hour auto-expiry. Use a temporary address for sign-ups and verification.";
 
 export async function loader({ request }: Route.LoaderArgs) {
 	const theme = parseThemeFromCookieHeader(request.headers.get("Cookie"));

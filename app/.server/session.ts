@@ -1,5 +1,5 @@
 import { createCookieSessionStorage } from "react-router";
-import { MAIL_RETENTION_HOURS } from "~/utils/mail-retention";
+import { SESSION_RETENTION_HOURS } from "~/utils/mail-retention";
 
 type SessionData = {
 	addresses: string[];
@@ -36,7 +36,7 @@ async function getSessionStorage() {
 			cookie: {
 				name: "__session",
 				httpOnly: true,
-				maxAge: MAIL_RETENTION_HOURS * 60 * 60,
+				maxAge: SESSION_RETENTION_HOURS * 60 * 60,
 				path: "/",
 				sameSite: "lax",
 				secrets: getSessionSecrets(env),

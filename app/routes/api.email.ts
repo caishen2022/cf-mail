@@ -1,7 +1,6 @@
 import Parser from "postal-mime";
 import { getSession } from "~/.server/session";
 import type { EmailDetail } from "~/types/email";
-import { MAIL_RETENTION_MS } from "~/utils/mail-retention";
 import type { Route } from "./+types/api.email";
 
 function wrapEmailContent(content: string): string {
@@ -81,11 +80,7 @@ export async function loader({ request, params, context }: Route.LoaderArgs) {
 
 	const session = await getSession(request.headers.get("Cookie"));
 	const addresses = (session.get("addresses") || []) as string[];
-	const addressIssuedAt = session.get("addressIssuedAt");
-	const isAddressExpired =
-		typeof addressIssuedAt === "number" &&
-		Date.now() - addressIssuedAt >= MAIL_RETENTION_MS;
-	if (isAddressExpired || !addresses.includes(mail.to_address)) {
+	if (!addresses.includes(mail.to_address)) {
 		throw new Response("Unauthorized", { status: 403 });
 	}
 

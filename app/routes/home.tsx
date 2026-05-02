@@ -19,7 +19,6 @@ import {
 	isReusableGeneratedAddress,
 	normalizeEmailAddress,
 } from "~/utils/mail";
-import { MAIL_RETENTION_MS } from "~/utils/mail-retention";
 import { mergeRouteMeta } from "~/utils/meta";
 import type { Route } from "./+types/home";
 
@@ -95,7 +94,7 @@ const SEO_NARRATIVE_COPY: Record<Locale, SeoNarrative> = {
 	en: {
 		title: "Why use smail.pw temporary email",
 		description:
-			"smail.pw is a free temporary email generator (temp mail) for low-risk sign-ups, OTP verification, and one-time downloads. Create a 24-hour disposable inbox in seconds.",
+			"smail.pw is a free temporary email generator (temp mail) for low-risk sign-ups, OTP verification, and one-time downloads. Create a 1-hour disposable inbox in seconds.",
 		points: [
 			"Works well for temporary email registration and verification code workflows",
 			"No sign-up or password setup for quick temp mail access",
@@ -106,7 +105,7 @@ const SEO_NARRATIVE_COPY: Record<Locale, SeoNarrative> = {
 	zh: {
 		title: "为什么选择 smail.pw 临时邮箱",
 		description:
-			"smail.pw 是免费临时邮箱生成器，覆盖临时邮箱、一次性邮箱、24小时邮箱等常见场景。适合临时邮箱注册、验证码（OTP）接收和在线临时收信。",
+			"smail.pw 是免费临时邮箱生成器，覆盖临时邮箱、一次性邮箱、1小时邮箱等常见场景。适合临时邮箱注册、验证码（OTP）接收和在线临时收信。",
 		points: [
 			"适合临时邮箱注册、活动领取、下载验证等低风险场景",
 			"免注册、免密码，作为免费临时邮箱快速使用，减少真实邮箱暴露",
@@ -117,7 +116,7 @@ const SEO_NARRATIVE_COPY: Record<Locale, SeoNarrative> = {
 	es: {
 		title: "Por qué usar el correo temporal de smail.pw",
 		description:
-			"smail.pw ofrece correo temporal gratis (temp mail) para registros rápidos, verificación OTP y descargas puntuales con retención de 24 horas.",
+			"smail.pw ofrece correo temporal gratis (temp mail) para registros rápidos, verificación OTP y descargas puntuales con retención de 1 hora.",
 		points: [
 			"Útil para flujos de registro y verificación de bajo riesgo",
 			"Sin cuenta ni contraseña para empezar de inmediato",
@@ -127,7 +126,7 @@ const SEO_NARRATIVE_COPY: Record<Locale, SeoNarrative> = {
 	fr: {
 		title: "Pourquoi utiliser l'email temporaire smail.pw",
 		description:
-			"smail.pw fournit un email temporaire gratuit (temp mail) pour inscription rapide, OTP et usages ponctuels avec rétention de 24h.",
+			"smail.pw fournit un email temporaire gratuit (temp mail) pour inscription rapide, OTP et usages ponctuels avec rétention de 1h.",
 		points: [
 			"Adapté aux inscriptions et vérifications à faible risque",
 			"Aucun compte ni mot de passe requis pour commencer",
@@ -137,7 +136,7 @@ const SEO_NARRATIVE_COPY: Record<Locale, SeoNarrative> = {
 	de: {
 		title: "Warum temporäre E-Mail von smail.pw",
 		description:
-			"smail.pw bietet kostenlose Temp Mail für schnelle Registrierungen, OTP-Verifizierung und einmalige Nutzung mit 24h Aufbewahrung.",
+			"smail.pw bietet kostenlose Temp Mail für schnelle Registrierungen, OTP-Verifizierung und einmalige Nutzung mit 1h Aufbewahrung.",
 		points: [
 			"Ideal für risikoarme Registrierung und Verifizierung",
 			"Kein Konto und kein Passwort für den Sofortstart",
@@ -177,7 +176,7 @@ const SEO_NARRATIVE_COPY: Record<Locale, SeoNarrative> = {
 	pt: {
 		title: "Por que usar o email temporário do smail.pw",
 		description:
-			"smail.pw oferece temp mail grátis para cadastro rápido, OTP e uso pontual, com caixa descartável por 24 horas.",
+			"smail.pw oferece temp mail grátis para cadastro rápido, OTP e uso pontual, com caixa descartável por 1 hora.",
 		points: [
 			"Bom para cadastro e verificação de baixo risco",
 			"Sem conta e sem senha para começar imediatamente",
@@ -203,15 +202,15 @@ function getSeoNarrative(locale: Locale): SeoNarrative {
 function getHomeJsonLd(locale: Locale) {
 	const localizedHomeUrl = `${BASE_URL}${toLocalePath("/", locale)}`;
 	const descriptionByLocale: Record<Locale, string> = {
-		en: "smail.pw provides free temporary email (temp mail) inboxes for sign-up and OTP verification with 24-hour auto cleanup.",
-		zh: "smail.pw 提供免费临时邮箱（一次性邮箱）服务，适合临时邮箱注册和验证码接收，邮件 24 小时后自动清理。",
-		es: "smail.pw ofrece correo temporal gratis (temp mail) para registros y códigos OTP con limpieza automática en 24 horas.",
-		fr: "smail.pw propose un email temporaire gratuit (temp mail) pour inscription et OTP avec suppression automatique après 24h.",
-		de: "smail.pw bietet kostenlose temporäre E-Mail (Temp Mail) für Registrierung und OTP mit automatischer 24h-Bereinigung.",
+		en: "smail.pw provides free temporary email (temp mail) inboxes for sign-up and OTP verification with 1-hour auto cleanup.",
+		zh: "smail.pw 提供免费临时邮箱（一次性邮箱）服务，适合临时邮箱注册和验证码接收，邮件 1 小时后自动清理。",
+		es: "smail.pw ofrece correo temporal gratis (temp mail) para registros y códigos OTP con limpieza automática en 1 hora.",
+		fr: "smail.pw propose un email temporaire gratuit (temp mail) pour inscription et OTP avec suppression automatique après 1h.",
+		de: "smail.pw bietet kostenlose temporäre E-Mail (Temp Mail) für Registrierung und OTP mit automatischer 1h-Bereinigung.",
 		ja: "smail.pw は登録とOTP認証に使える無料の一時メール（temp mail）を提供し、24時間後に自動削除されます。",
 		ko: "smail.pw는 가입과 OTP 인증에 쓰는 무료 임시 이메일(temp mail)을 제공하며 24시간 후 자동 정리됩니다.",
 		ru: "smail.pw предоставляет бесплатную временную почту (temp mail) для регистрации и OTP с автоочисткой через 24 часа.",
-		pt: "smail.pw oferece email temporário grátis (temp mail) para cadastro e OTP com limpeza automática após 24h.",
+		pt: "smail.pw oferece email temporário grátis (temp mail) para cadastro e OTP com limpeza automática após 1h.",
 		ar: "يوفر smail.pw بريدًا مؤقتًا مجانيًا (temp mail) للتسجيل ورموز OTP مع حذف تلقائي بعد 24 ساعة.",
 	};
 	const description = descriptionByLocale[locale] ?? descriptionByLocale.en;
@@ -269,16 +268,6 @@ export function meta({ params, matches }: Route.MetaArgs) {
 			content: "index, follow",
 		},
 	]);
-}
-
-function isAddressExpired(
-	addressIssuedAt: number | undefined,
-	now = Date.now(),
-): boolean {
-	if (!addressIssuedAt) {
-		return false;
-	}
-	return now - addressIssuedAt >= MAIL_RETENTION_MS;
 }
 
 function EmailModal({
@@ -476,17 +465,12 @@ export async function loader({ request, context, params }: Route.LoaderArgs) {
 
 	const cookieHeader = request.headers.get("Cookie");
 	const session = await getSession(cookieHeader);
-	let addresses = (session.get("addresses") || []) as string[];
+	const addresses = (session.get("addresses") || []) as string[];
 	const addressIssuedAt = session.get("addressIssuedAt");
 	const now = Date.now();
 	let shouldCommitSession = false;
 
-	if (addresses.length > 0 && isAddressExpired(addressIssuedAt, now)) {
-		addresses = [generateEmailAddress()];
-		session.set("addresses", addresses);
-		session.set("addressIssuedAt", now);
-		shouldCommitSession = true;
-	} else if (addresses.length > 0 && !addressIssuedAt) {
+	if (addresses.length > 0 && !addressIssuedAt) {
 		session.set("addressIssuedAt", now);
 		shouldCommitSession = true;
 	}

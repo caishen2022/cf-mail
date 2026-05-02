@@ -55,15 +55,15 @@ export interface Dictionary {
 
 const en: Dictionary = {
 	home: {
-		title: "smail.pw Temporary Email (24h) - Free Temp Mail for OTP & Sign-Ups",
+		title: "smail.pw Temporary Email (1h) - Free Temp Mail for OTP & Sign-Ups",
 		description:
-			"Generate free temporary email (temp mail) instantly on smail.pw. Use a 24-hour disposable inbox for OTP verification, quick sign-ups, and spam control.",
+			"Generate free temporary email (temp mail) instantly on smail.pw. Use a 1-hour disposable inbox for OTP verification, quick sign-ups, and spam control.",
 		keywords:
-			"smail, smail temp mail, temporary email, temp mail, disposable email, temporary email generator, 24 hour temporary email, no registration email, otp email, smail.pw",
+			"smail, smail temp mail, temporary email, temp mail, disposable email, temporary email generator, 1 hour temporary email, no registration email, otp email, smail.pw",
 		heroTag: "Disposable mailbox",
-		heroTitle: "Create a 24-hour temporary email inbox in one tap.",
+		heroTitle: "Create a 1-hour temporary email inbox in one tap.",
 		heroDescription:
-			"Generate a temp mail address for sign-ups and OTP links in seconds. Messages auto-expire after 24 hours to reduce data exposure.",
+			"Generate a temp mail address for sign-ups and OTP links in seconds. Messages auto-expire after 1 hour to reduce data exposure.",
 		loadingAddresses: "Loading addresses...",
 		currentAddress: "Current disposable address",
 		copy: "Copy",
@@ -77,7 +77,7 @@ const en: Dictionary = {
 			"Generate a temporary address to use for sign-ups and one-off verifications.",
 		generateAddress: "Generate address",
 		stats: {
-			lifetimeValue: "24h",
+			lifetimeValue: "1h",
 			refreshValue: "Instant",
 			registrationValue: "Zero",
 			lifetime: "Email retention",
@@ -95,7 +95,7 @@ const en: Dictionary = {
 		refreshingInbox: "Refreshing...",
 		lastRefresh: "Last refresh",
 		safetyHint:
-			"Do not use this address for banking, work, or critical account codes. Messages are automatically removed after 24 hours.",
+			"Do not use this address for banking, work, or critical account codes. Messages are automatically removed after 1 hour.",
 		modal: {
 			title: "Message preview",
 			from: "From",
@@ -114,15 +114,15 @@ const en: Dictionary = {
 
 const zh: Dictionary = {
 	home: {
-		title: "临时邮箱生成器（24小时）- 免费一次性邮箱免注册收验证码 | smail.pw",
+		title: "临时邮箱生成器（1小时）- 免费一次性邮箱免注册收验证码 | smail.pw",
 		description:
-			"免费临时邮箱生成器，一键创建 24 小时一次性邮箱。适合临时邮箱注册、验证码接收与在线临时收信，减少垃圾邮件。",
+			"免费临时邮箱生成器，一键创建 1 小时一次性邮箱。适合临时邮箱注册、验证码接收与在线临时收信，减少垃圾邮件。",
 		keywords:
-			"临时邮箱, 一次性邮箱, 临时邮箱生成器, 免费临时邮箱, 24小时临时邮箱, 24小时邮箱, 验证码邮箱, 免注册临时邮箱, 在线临时邮箱, 国内临时邮箱, 临时邮箱注册, 邮箱生成器",
+			"临时邮箱, 一次性邮箱, 临时邮箱生成器, 免费临时邮箱, 1小时临时邮箱, 1小时邮箱, 验证码邮箱, 免注册临时邮箱, 在线临时邮箱, 国内临时邮箱, 临时邮箱注册, 邮箱生成器",
 		heroTag: "一次性邮箱",
-		heroTitle: "免费临时邮箱生成器：一键创建 24 小时收件箱。",
+		heroTitle: "免费临时邮箱生成器：一键创建 1 小时收件箱。",
 		heroDescription:
-			"适合临时邮箱注册、验证码与一次性下载。邮件 24 小时后自动清理，减少真实邮箱暴露。",
+			"适合临时邮箱注册、验证码与一次性下载。邮件 1 小时后自动清理，减少真实邮箱暴露。",
 		loadingAddresses: "正在加载邮箱地址...",
 		currentAddress: "当前临时邮箱",
 		copy: "复制",
@@ -135,7 +135,7 @@ const zh: Dictionary = {
 		noAddressDescription: "生成一个临时邮箱，用于注册和一次性验证。",
 		generateAddress: "生成地址",
 		stats: {
-			lifetimeValue: "24小时",
+			lifetimeValue: "1小时",
 			refreshValue: "即时",
 			registrationValue: "零门槛",
 			lifetime: "邮件保留",
@@ -152,7 +152,7 @@ const zh: Dictionary = {
 		refreshingInbox: "刷新中...",
 		lastRefresh: "最近刷新",
 		safetyHint:
-			"请勿用于银行、工作或重要账号验证码。邮件会在 24 小时后自动删除。",
+			"请勿用于银行、工作或重要账号验证码。邮件会在 1 小时后自动删除。",
 		modal: {
 			title: "邮件预览",
 			from: "发件人",
@@ -171,11 +171,11 @@ const zh: Dictionary = {
 
 const es: Dictionary = {
 	home: {
-		title: "Correo temporal gratis 24h sin registro para OTP | smail.pw",
+		title: "Correo temporal gratis 1h sin registro para OTP | smail.pw",
 		description:
-			"Generador de correo temporal gratis (temp mail) para registros y códigos OTP. Crea un buzón desechable de 24 horas al instante.",
+			"Generador de correo temporal gratis (temp mail) para registros y códigos OTP. Crea un buzón desechable de 1 hora al instante.",
 		keywords:
-			"correo temporal, correo temporal gratis, email temporal, email desechable, temp mail, 24 horas, sin registro, codigo otp, smail.pw",
+			"correo temporal, correo temporal gratis, email temporal, email desechable, temp mail, 1 hora, sin registro, codigo otp, smail.pw",
 		heroTag: "Buzón temporal",
 		heroTitle: "Protege tu privacidad con un buzón en un clic.",
 		heroDescription:
@@ -193,7 +193,7 @@ const es: Dictionary = {
 			"Genera una dirección temporal para registros y verificaciones rápidas.",
 		generateAddress: "Generar dirección",
 		stats: {
-			lifetimeValue: "24h",
+			lifetimeValue: "1h",
 			refreshValue: "Instantáneo",
 			registrationValue: "Cero",
 			lifetime: "Vida útil",
@@ -229,11 +229,11 @@ const es: Dictionary = {
 
 const fr: Dictionary = {
 	home: {
-		title: "Email temporaire gratuit 24h sans inscription | smail.pw",
+		title: "Email temporaire gratuit 1h sans inscription | smail.pw",
 		description:
-			"Générateur d'email temporaire gratuit (temp mail) pour inscriptions rapides et codes OTP. Créez une boîte jetable 24h immédiatement.",
+			"Générateur d'email temporaire gratuit (temp mail) pour inscriptions rapides et codes OTP. Créez une boîte jetable 1h immédiatement.",
 		keywords:
-			"email temporaire, email jetable, temp mail, 24h, sans inscription, code otp, boite mail temporaire, smail.pw",
+			"email temporaire, email jetable, temp mail, 1h, sans inscription, code otp, boite mail temporaire, smail.pw",
 		heroTag: "Boîte temporaire",
 		heroTitle: "Protégez votre vie privée en un clic.",
 		heroDescription:
@@ -251,7 +251,7 @@ const fr: Dictionary = {
 			"Générez une adresse temporaire pour inscriptions et vérifications.",
 		generateAddress: "Générer une adresse",
 		stats: {
-			lifetimeValue: "24h",
+			lifetimeValue: "1h",
 			refreshValue: "Instantané",
 			registrationValue: "Zéro",
 			lifetime: "Durée",
@@ -288,11 +288,11 @@ const fr: Dictionary = {
 
 const de: Dictionary = {
 	home: {
-		title: "Temporäre E-Mail kostenlos (24h) ohne Registrierung | smail.pw",
+		title: "Temporäre E-Mail kostenlos (1h) ohne Registrierung | smail.pw",
 		description:
-			"Kostenloser Temp-Mail-Generator für Registrierungen und OTP-Codes. Erstelle sofort ein 24h Wegwerf-Postfach ohne Konto.",
+			"Kostenloser Temp-Mail-Generator für Registrierungen und OTP-Codes. Erstelle sofort ein 1h Wegwerf-Postfach ohne Konto.",
 		keywords:
-			"temporäre email, wegwerf-email, temp mail, 24h email, ohne registrierung, otp code email, smail.pw",
+			"temporäre email, wegwerf-email, temp mail, 1h email, ohne registrierung, otp code email, smail.pw",
 		heroTag: "Temporäres Postfach",
 		heroTitle: "Schütze deine Privatsphäre mit einem Klick.",
 		heroDescription:
@@ -310,7 +310,7 @@ const de: Dictionary = {
 			"Erzeuge eine temporäre Adresse für schnelle Registrierungen und Verifizierungen.",
 		generateAddress: "Adresse erzeugen",
 		stats: {
-			lifetimeValue: "24h",
+			lifetimeValue: "1h",
 			refreshValue: "Sofort",
 			registrationValue: "Null",
 			lifetime: "Lebensdauer",
@@ -519,11 +519,11 @@ const ru: Dictionary = {
 
 const pt: Dictionary = {
 	home: {
-		title: "Email temporário grátis 24h sem cadastro para OTP | smail.pw",
+		title: "Email temporário grátis 1h sem cadastro para OTP | smail.pw",
 		description:
-			"Gerador de temp mail grátis para cadastro e códigos OTP. Crie uma caixa descartável de 24h instantaneamente.",
+			"Gerador de temp mail grátis para cadastro e códigos OTP. Crie uma caixa descartável de 1h instantaneamente.",
 		keywords:
-			"email temporario, email temporário, email descartavel, temp mail, 24h, sem cadastro, codigo otp, smail.pw",
+			"email temporario, email temporário, email descartavel, temp mail, 1h, sem cadastro, codigo otp, smail.pw",
 		heroTag: "Caixa temporária",
 		heroTitle: "Proteja sua privacidade com um clique.",
 		heroDescription:
@@ -541,7 +541,7 @@ const pt: Dictionary = {
 			"Gere um endereço temporário para cadastros e verificações rápidas.",
 		generateAddress: "Gerar endereço",
 		stats: {
-			lifetimeValue: "24h",
+			lifetimeValue: "1h",
 			refreshValue: "Instantâneo",
 			registrationValue: "Zero",
 			lifetime: "Duração",
