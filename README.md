@@ -2,7 +2,7 @@
 
 基于 React Router Framework Mode + Cloudflare Workers 的临时邮箱服务。
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/akazwz/smail)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=[https://github.com/akazwz/smail](https://github.com/caishen2022/cf-mail))
 
 - 线上域名：`https://smail.pw`
 - Worker 名称：`smail-app`
